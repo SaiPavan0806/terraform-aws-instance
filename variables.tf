@@ -11,11 +11,11 @@ variable "instance_type" {
     error_message = "Please select either t3.micro, small or medium"
   }
 }
-
+# If default is not mentioned, it is a mandate information which needs to be passed.
 variable "sg_ids" {
     type = list(string)
 }
-
+#Optional as the default is marked
 variable "tags" {
     type = map
     default = {}
